@@ -1,7 +1,6 @@
-# Sistema-bancario
-Primera actividad obligatoria de POO del Centro de formacion profesional N°8 SMATA
-
 # Sistema Bancario – Java POO
+
+Primera actividad obligatoria de POO del Centro de formacion profesional N°8 SMATA
 
 Este proyecto implementa un modelo bancario utilizando **Programación Orientada a Objetos en Java**, con el objetivo de practicar conceptos de herencia, polimorfismo y abstracción.  
 
