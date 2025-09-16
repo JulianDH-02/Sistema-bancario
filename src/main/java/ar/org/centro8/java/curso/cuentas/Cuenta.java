@@ -14,12 +14,12 @@ public abstract class Cuenta {
     private double saldo;
 
 
-    public void depositar(double monto){
+    public double depositar(double monto){
         if (monto <= 0) {
             throw new IllegalArgumentException("El monto a depositar debe ser mayor que 0.");
         }
-        saldo += monto;
+        return saldo += monto;
     }
 
-    public abstract void extraer(double monto);
+    public abstract double extraer(double monto);
 }

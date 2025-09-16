@@ -1,6 +1,6 @@
 package ar.org.centro8.java.curso.cuentas;
 
-import ar.org.centro8.java.curso.clientes.Cliente;
+import ar.org.centro8.java.curso.clientes.ClienteEmpresa;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,7 +12,7 @@ import lombok.ToString;
 public class CuentaConvertibilidad extends CuentaCorriente {
     private double saldoDolares;
 
-    public CuentaConvertibilidad(int numeroCuenta, Cliente cliente, double saldoInicial, double montoDescubierto) {
+    public CuentaConvertibilidad(int numeroCuenta, ClienteEmpresa cliente, double saldoInicial, double montoDescubierto) {
         super(numeroCuenta, cliente, saldoInicial, montoDescubierto);
         this.saldoDolares = 0;
     }
@@ -41,6 +41,8 @@ public class CuentaConvertibilidad extends CuentaCorriente {
         if (saldoDolares >= monto) {
             saldoDolares -= monto;
             setSaldo(getSaldo() + monto * tasa);
+        }else{
+
         }
     }
 }
