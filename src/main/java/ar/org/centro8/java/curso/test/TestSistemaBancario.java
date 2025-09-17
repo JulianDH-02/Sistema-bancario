@@ -48,7 +48,7 @@ public class TestSistemaBancario {
         ca1.cobrarInteres();
         System.out.println("***************");
 
-        System.out.println("** CUENTA CORRIENTE **\n");
+        System.out.println("\n** CUENTA CORRIENTE **\n");
 
         Cliente cliente2 = new ClienteIndividual(2, "Sergio", "Agüero", "33738339");
 
